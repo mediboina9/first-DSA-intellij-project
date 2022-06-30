@@ -30,6 +30,9 @@ public class DataDefine {
         System.out.println(objectBinarySearchTree.getMin()+"<-min node in tree");
         // System.out.println(objectBinarySearchTree.getMax()+"<-max node in tree");
         objectBinarySearchTree.traverse();
+        objectBinarySearchTree.delete(25);
+        System.out.println("After deletion of the node");
+        objectBinarySearchTree.traverse();
 
         System.out.println(objectBinarySearchTree.isEmpty());
     }

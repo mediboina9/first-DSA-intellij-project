@@ -27,6 +27,7 @@ public class BinarySearchTree <T extends Comparable<T>> implements Tree<T>{
        // node.setHeight(heightOfTheNode(node));
         updateHeight(node);
         node=rotaionForBalancing(node);
+
         System.out.println(node+" root node return after performing balance");
         
         return node;
@@ -56,6 +57,7 @@ public class BinarySearchTree <T extends Comparable<T>> implements Tree<T>{
             System.out.println("rotateLeft"+ node);
 
             return rotateLeft(node);
+
         }
         return node;
     }
@@ -70,6 +72,7 @@ public class BinarySearchTree <T extends Comparable<T>> implements Tree<T>{
         updateHeight(node);
         System.out.println("update hieght in rotate left method"+ node);
         updateHeight(rightNode);
+        System.out.println("right node as root node after balacing in rotateLeft method"+rightNode);
         return rightNode;
     }
 
@@ -119,7 +122,7 @@ public class BinarySearchTree <T extends Comparable<T>> implements Tree<T>{
 
     @Override
     public void delete(T data) {
-        delete(data,root);
+       root= delete(data,root);
 
     }
 
@@ -145,6 +148,9 @@ public class BinarySearchTree <T extends Comparable<T>> implements Tree<T>{
                // delete(node.getData(),node.getLeftChild());
                 node.setLeftChild(delete(node.getData(),node.getLeftChild()));
             }
+            updateHeight(node);
+            node=rotaionForBalancing(node);
+            System.out.println("deletion method and after rotationForBalcing() node is"+node);
             }
          return node;
         }
