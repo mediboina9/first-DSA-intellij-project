@@ -40,7 +40,7 @@ public class Main {
 
       // System.out.println(fib(60));
         FibonaaciSeries fibonaaciSeries=new FibonaaciSeries();
-        fibonaaciSeries.Fibancci1000SeriesUsingArray(1001);
+        fibonaaciSeries.Fibancci1000SeriesUsingArray(1000);
 
     }
 
