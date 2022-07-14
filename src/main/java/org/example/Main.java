@@ -15,10 +15,10 @@ public class Main {
 
         //DataDefine dataDefine=new DataDefine();
        // IcimsPrepairation obj=new IcimsPrepairation();
-    //    ExceptionQuestionFromIcims ob=new ExceptionQuestionFromIcims();
+    //  ExceptionQuestionFromIcims ob=new ExceptionQuestionFromIcims();
      //   System.out.println(ob.ExceptionQuestionFromIcims());
 
-        DataDefine o=new DataDefine();
+       // DataDefine o=new DataDefine();
 
 
 
