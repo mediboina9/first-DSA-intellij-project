@@ -5,6 +5,7 @@ import org.apache.maven.artifact.versioning.ComparableVersion;
 import org.example.BST.BinarySearchTree;
 import org.example.BST.DataDefine;
 import org.example.BST.Node;
+import org.example.hashMap.HashMapOperation;
 
 import java.util.Arrays;
 
@@ -22,7 +23,7 @@ public class Main {
 
 
 
-                String v1="1.0.10";
+         /*       String v1="1.0.10";
                 String v2="1.0.27";
 
                 String  arr1[]=v1.split(".");
@@ -36,8 +37,12 @@ public class Main {
         }
         else {
             System.out.println(v1);
-        }
+        }*/
+        HashMapOperation hashMapOperation=new HashMapOperation();
+        System.out.println("getHigestCountIndex:"+hashMapOperation.getHigestCountIndex());
 
+        String s1="siva";
+        System.out.println(s1+" -> "+s1.hashCode()+" :s1=siva");
 
 
 
