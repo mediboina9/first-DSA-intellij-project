@@ -31,8 +31,16 @@ public class Mohit {
             linkedHashMap.put(i,hashMap.get(i));
         }
         linkedHashMap.entrySet().stream().forEach(System.out::println);
+        Hello obj=(String x,String y)->x==y;
+
+        linkedHashMap.entrySet().stream().filter(x->obj.hell(x.getKey().studentName,"siva")).forEach(System.out::println);
+
     }
 
+}
+@FunctionalInterface
+interface Hello<T> {
+    public Boolean hell(String s,String s1);
 }
 
 class Student implements Comparable<Student> {
